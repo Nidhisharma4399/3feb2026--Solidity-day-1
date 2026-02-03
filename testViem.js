@@ -1,9 +1,9 @@
 import { createPublicClient, http } from "viem";
-import { mainnet } from "viem/chains";
+import { localhost } from "viem/chains";
 
 async function main() {
   const client = createPublicClient({
-    chain: mainnet,
+    chain: localhost,
     transport: http(),
   });
 
